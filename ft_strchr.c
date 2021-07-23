@@ -1,24 +1,10 @@
 char	*ft_strchr(const char	*s, int	c)
 {
-	int	i;
-
-
-	i = 0;
-	while (*s != '\0')
+	while (*s)
 	{
 		if (*s == (char)c)
-			return ((char *)s);
+			return (&s);
 		s++;
 	}
-	return (0);
-}
-
-int	main(void)
-{
-	char	*string;
-	int		c;
-
-	string = "olaa";
-	c = 'a';
-	return (0);
+	return (NULL);
 }
