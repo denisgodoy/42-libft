@@ -4,14 +4,13 @@
 
 int	main(void)
 {
-	int	al;
-	int	num;
-	int	not_alnum;
+	int	i;
 
-	al = 'a';
-	num = 49;
-	not_alnum = ' ';
-	printf("Expected: %d, Got: %d\n", isalnum(al), ft_isalnum(al));
-	printf("Expected: %d, Got: %d\n", isalnum(num), ft_isalnum(num));
-	printf("Expected: %d, Got: %d\n", isalnum(not_alnum), ft_isalnum(not_alnum));
+	i = 66;
+	while (i > 55)
+	{
+		printf("Test: %c\nExpected: %d, Got: %d\n\n",
+			i, isalnum(i), ft_isalnum(i));
+		i--;
+	}
 }

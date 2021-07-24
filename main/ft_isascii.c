@@ -4,14 +4,15 @@
 
 int	main(void)
 {
-	int	al;
-	int	num;
-	int	not_ascii;
+	int	i;
 
-	al = 'a';
-	num = 49;
-	not_ascii = 128;
-	printf("Expected: %d, Got: %d\n", isascii(al), ft_isascii(al));
-	printf("Expected: %d, Got: %d\n", isascii(num), ft_isascii(num));
-	printf("Expected: %d, Got: %d\n", isascii(not_ascii), ft_isascii(not_ascii));
+	i = 130;
+	while (i > 121)
+	{
+		printf("Test: %c\nExpected: %d, Got: %d\n\n",
+			i, isascii(i), ft_isascii(i));
+		i--;
+	}
+	printf("Test: %c\nExpected: %d, Got: %d\n\n",
+			0, isascii(i), ft_isascii(i));
 }

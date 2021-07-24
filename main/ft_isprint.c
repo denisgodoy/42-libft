@@ -4,14 +4,15 @@
 
 int	main(void)
 {
-	int	al;
-	int	num;
-	int	not_print;
+	int	i;
 
-	al = 'a';
-	num = 49;
-	not_print = 128;
-	printf("Expected: %d, Got: %d\n", isprint(al), ft_isprint(al));
-	printf("Expected: %d, Got: %d\n", isprint(num), ft_isprint(num));
-	printf("Expected: %d, Got: %d\n", isprint(not_print), ft_isprint(not_print));
+	i = 132;
+	while (i > 123)
+	{
+		printf("Test: %c\nExpected: %d, Got: %d\n\n",
+			i, isprint(i), ft_isprint(i));
+		i--;
+	}
+	printf("Test: %c\nExpected: %d, Got: %d\n\n",
+			32, isprint(i), ft_isprint(i));
 }

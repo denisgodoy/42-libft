@@ -4,14 +4,13 @@
 
 int	main(void)
 {
-	int	al;
-	int	num;
-	int	not_alnum;
+	int	i;
 
-	al = 'a';
-	num = 49;
-	not_alnum = 128;
-	printf("Expected: %d, Got: %d\n", isdigit(al), ft_isdigit(al));
-	printf("Expected: %d, Got: %d\n", isdigit(num), ft_isdigit(num));
-	printf("Expected: %d, Got: %d\n", isdigit(not_alnum), ft_isdigit(not_alnum));
+	i = 57;
+	while (i > 42)
+	{
+		printf("Test: %c\nExpected: %d, Got: %d\n\n",
+			i, isdigit(i), ft_isdigit(i));
+		i--;
+	}
 }

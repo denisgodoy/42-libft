@@ -7,8 +7,12 @@ int	main(void)
 	char	*string;
 	int		find;
 
-	string = "Hello World";
-	find = 'o';
-	printf("Test: %s\nExpected: %s\nGot: %s\n",
-		string, strchr(string, find), ft_strchr(string, find));
+	string = "abcdefghijklmnopqrstuvwxyz";
+	find = 'a';
+	while (find <= 'z')
+	{
+		printf("Start at: %c\nExpected: %s\nGot: %s\n\n",
+			find, strchr(string, find), ft_strchr(string, find));
+		find++;
+	}
 }
