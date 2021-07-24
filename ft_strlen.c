@@ -1,4 +1,4 @@
-unsigned int	ft_strlen(const char	*s)
+unsigned long int	ft_strlen(const char	*s)
 {
 	int	i;
 
