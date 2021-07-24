@@ -14,5 +14,5 @@ int	main(void)
 		i--;
 	}
 	printf("Test: %c\nExpected: %d, Got: %d\n\n",
-			32, isprint(i), ft_isprint(i));
+		32, isprint(i), ft_isprint(i));
 }

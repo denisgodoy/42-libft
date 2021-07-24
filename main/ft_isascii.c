@@ -14,5 +14,5 @@ int	main(void)
 		i--;
 	}
 	printf("Test: %c\nExpected: %d, Got: %d\n\n",
-			0, isascii(i), ft_isascii(i));
+		0, isascii(i), ft_isascii(i));
 }
