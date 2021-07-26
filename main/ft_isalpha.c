@@ -9,7 +9,7 @@ int	main(void)
 	i = 98;
 	while (i > 88)
 	{
-		printf("Test: %c\nExpected: %d, Got: %d\n\n",
+		printf("Test: %c\nExpected: %d\nGot: %d\n\n",
 			i, isalpha(i), ft_isalpha(i));
 		i--;
 	}

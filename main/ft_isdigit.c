@@ -9,7 +9,7 @@ int	main(void)
 	i = 57;
 	while (i > 42)
 	{
-		printf("Test: %c\nExpected: %d, Got: %d\n\n",
+		printf("Test: %c\nExpected: %d\nGot: %d\n\n",
 			i, isdigit(i), ft_isdigit(i));
 		i--;
 	}

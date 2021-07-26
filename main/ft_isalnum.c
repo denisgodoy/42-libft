@@ -9,7 +9,7 @@ int	main(void)
 	i = 66;
 	while (i > 55)
 	{
-		printf("Test: %c\nExpected: %d, Got: %d\n\n",
+		printf("Test: %c\nExpected: %d\nGot: %d\n\n",
 			i, isalnum(i), ft_isalnum(i));
 		i--;
 	}

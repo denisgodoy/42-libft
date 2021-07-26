@@ -9,7 +9,7 @@ int	main(void)
 	i = 92;
 	while (i > 64)
 	{
-		printf("Test: %c\nExpected: %c, Got: %c\n\n",
+		printf("Test: %c\nExpected: %c\nGot: %c\n\n",
 			i, tolower(i), ft_tolower(i));
 		i--;
 	}

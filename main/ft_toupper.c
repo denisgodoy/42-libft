@@ -9,7 +9,7 @@ int	main(void)
 	i = 122;
 	while (i > 94)
 	{
-		printf("Test: %c\nExpected: %c, Got: %c\n\n",
+		printf("Test: %c\nExpected: %c\nGot: %c\n\n",
 			i, toupper(i), ft_toupper(i));
 		i--;
 	}

@@ -9,10 +9,10 @@ int	main(void)
 	i = 132;
 	while (i > 123)
 	{
-		printf("Test: %c\nExpected: %d, Got: %d\n\n",
+		printf("Test: %c\nExpected: %d\nGot: %d\n\n",
 			i, isprint(i), ft_isprint(i));
 		i--;
 	}
-	printf("Test: %c\nExpected: %d, Got: %d\n\n",
+	printf("Test: %c\nExpected: %d\nGot: %d\n\n",
 		32, isprint(i), ft_isprint(i));
 }
