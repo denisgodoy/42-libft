@@ -7,18 +7,18 @@ int	ft_atoi(const char	*nptr)
 	num = 0;
 	c_minus = 0;
 	i = 0;
-	while (nptr[i] == 32
-		|| (nptr[i] >= 9 && nptr[i] <= 13)
-		|| nptr[i] == 43
-		|| nptr[i] == 45)
+	while (nptr[i] == ' '
+		|| (nptr[i] >= '\t' && nptr[i] <= '\r')
+		|| nptr[i] == '+'
+		|| nptr[i] == '-')
 	{
-		if (nptr[i] == 45)
+		if (nptr[i] == '-')
 			c_minus += 1;
 		i++;
 	}
-	while (nptr[i] >= 48 && nptr[i] <= 57)
+	while (nptr[i] >= '0' && nptr[i] <= '9')
 	{
-		num = num * 10 + (nptr[i] - 48);
+		num = num * 10 + (nptr[i] - '0');
 		i++;
 	}
 	if (c_minus % 2 != 0)
