@@ -37,45 +37,49 @@ fclean:	clean
 re:	fclean all
 
 ft_atoi:	ft_atoi.c
-	$(CC) $(CFLAGS) ft_atoi.c ./main/ft_atoi.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_isalnum:	ft_isalnum.c
-	$(CC) $(CFLAGS) ft_isalnum.c ./main/ft_isalnum.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_isalpha:	ft_isalpha.c
-	$(CC) $(CFLAGS) ft_isalpha.c ./main/ft_isalpha.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_isascii:	ft_isascii.c
-	$(CC) $(CFLAGS) ft_isascii.c ./main/ft_isascii.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_isdigit:	ft_isdigit.c
-	$(CC) $(CFLAGS) ft_isdigit.c ./main/ft_isdigit.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_isprint:	ft_isprint.c
-	$(CC) $(CFLAGS) ft_isprint.c ./main/ft_isprint.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_strchr:	ft_strchr.c
-	$(CC) $(CFLAGS) ft_strchr.c ./main/ft_strchr.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_strlen:	ft_strlen.c
-	$(CC) $(CFLAGS) ft_strlen.c ./main/ft_strlen.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_strncmp:	ft_strncmp.c
-	$(CC) $(CFLAGS) ft_strncmp.c ./main/ft_strncmp.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	./a.out
+
+ft_strrchr:	ft_strrchr.c
+	$(CC) $(CFLAGS) $@.c ft_strlen.c ./main/$@.c
 	./a.out
 
 ft_tolower:	ft_tolower.c
-	$(CC) $(CFLAGS) ft_tolower.c ./main/ft_tolower.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
 ft_toupper:	ft_isprint.c
-	$(CC) $(CFLAGS) ft_toupper.c ./main/ft_toupper.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
