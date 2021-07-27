@@ -1,20 +1,8 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/07/26 15:05:39 by degabrie          #+#    #+#              #
-#    Updated: 2021/07/26 15:06:01 by degabrie         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 NAME := libft.a
 
 CC := clang
 
-CFLAGS := -Wall -Werror -Wextra -fsanitize=address
+CFLAGS := -Wall -Werror -Wextra
 
 SRC := ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strchr.c \
 ft_strlen.c ft_strncmp.c ft_tolower.c ft_toupper.c

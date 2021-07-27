@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/26 15:04:21 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/26 15:04:22 by degabrie         ###   ########.fr       */
+/*   Created: 2021/07/27 14:56:37 by degabrie          #+#    #+#             */
+/*   Updated: 2021/07/27 14:56:38 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,6 @@ int	main(void)
 			i, isascii(i), ft_isascii(i));
 		i--;
 	}
-	printf("Test: %c\nExpected: %d, Got: %d\n\n",
+	printf("Test: %c\nExpected: %d\nGot: %d\n\n",
 		0, isascii(i), ft_isascii(i));
 }

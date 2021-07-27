@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/26 15:04:28 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/26 15:04:29 by degabrie         ###   ########.fr       */
+/*   Created: 2021/07/27 14:56:45 by degabrie          #+#    #+#             */
+/*   Updated: 2021/07/27 14:56:46 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	main(void)
 	char	*string;
 	int		find;
 
-	string = "abcdefghijklmnopqrstuvwxyz";
+	string = "42 is an innovative engineering and programming college";
 	find = 'a';
 	while (find <= 'z')
 	{

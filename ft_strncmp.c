@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/26 15:03:58 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/26 15:03:59 by degabrie         ###   ########.fr       */
+/*   Created: 2021/07/27 14:55:52 by degabrie          #+#    #+#             */
+/*   Updated: 2021/07/27 15:47:22 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(const char	*s1, const char	*s2, unsigned int	n)
+int	ft_strncmp(const char	*s1, const char	*s2, unsigned long int	n)
 {
-	unsigned int	i;
+	unsigned long int	i;
 
 	i = 0;
 	if (n == 0)

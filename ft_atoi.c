@@ -5,33 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/26 15:03:26 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/26 15:03:27 by degabrie         ###   ########.fr       */
+/*   Created: 2021/07/27 14:55:17 by degabrie          #+#    #+#             */
+/*   Updated: 2021/07/27 15:46:21 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(const char	*nptr)
+int	ft_atoi(const char	*str)
 {
-	int	i;
 	int	c_minus;
 	int	num;
 
 	num = 0;
 	c_minus = 0;
-	i = 0;
-	while (nptr[i] == ' '
-		|| (nptr[i] >= '\t' && nptr[i] <= '\r')
-		|| nptr[i] == '+'
-		|| nptr[i] == '-')
+	while (*str == ' '
+		|| (*str >= '\t' && *str <= '\r')
+		|| *str == '+'
+		|| *str == '-')
 	{
-		if (nptr[i] == '-')
+		if (*str == '-')
 			c_minus += 1;
-		i++;
+		str++;
 	}
-	while (nptr[i] >= '0' && nptr[i] <= '9')
+	while (*str >= '0' && *str <= '9')
 	{
-		num = num * 10 + (nptr[i] - '0');
-		i++;
+		num = num * 10 + (*str - '0');
+		str++;
 	}
 	if (c_minus % 2 != 0)
 		return (num *= -1);
