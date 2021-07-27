@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:56:08 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/27 18:22:48 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/27 20:45:43 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,10 @@
 # define LIBFT_H
 
 int					ft_atoi(const char	*nptr);
+
+void				ft_bzero(
+						void	*s,
+						unsigned long int	n);
 
 int					ft_isalnum(int	c);
 
@@ -34,12 +38,17 @@ char				*ft_strchr(
 						const char	*s,
 						int	c);
 
+unsigned long int	ft_strlcat(
+						char	*dst,
+						const char	*src,
+						unsigned long int	size);
+
 unsigned long int	ft_strlen(const char	*s);
 
 int					ft_strncmp(
 						const char	*s1,
 						const char	*s2,
-						unsigned int	n);
+						unsigned long int	n);
 
 char				*ft_strrchr(
 						const char	*s,
