@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/26 22:21:04 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/26 22:21:05 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/26 23:06:32 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,7 @@ char	*ft_strrchr(const char	*s, int	c)
 	size = ft_strlen(s);
 	string = &s[size];
 	while (*(--string))
-	{
 		if (*string == (char)c)
 			return ((char *)string);
-	}
 	return (0);
 }
