@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/27 14:57:09 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/28 10:03:13 by degabrie         ###   ########.fr       */
+/*   Created: 2021/07/27 14:53:44 by degabrie          #+#    #+#             */
+/*   Updated: 2021/07/28 16:45:33 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ void				*ft_memmove(
 						void	*dst,
 						const void	*src,
 						unsigned long int	len);
-						
+
 void				*ft_memset(
 						void	*b,
 						int	c,
@@ -51,7 +51,12 @@ char				*ft_strchr(
 unsigned long int	ft_strlcat(
 						char	*dst,
 						const char	*src,
-						unsigned long int	size);
+						unsigned long int	dstsize);
+
+unsigned long int	ft_strlcpy(
+						char	*dst,
+						const char	*src,
+						unsigned long int	dstsize);
 
 unsigned long int	ft_strlen(const char	*s);
 

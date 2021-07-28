@@ -26,69 +26,73 @@ fclean:	clean
 re:	fclean all
 
 ft_atoi:	ft_atoi.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_bzero:	ft_bzero.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_isalnum:	ft_isalnum.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_isalpha:	ft_isalpha.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_isascii:	ft_isascii.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_isdigit:	ft_isdigit.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_isprint:	ft_isprint.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_memcpy:	ft_memcpy.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_memmove:	ft_memmove.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_memset:	ft_memset.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_strchr:	ft_strchr.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_strlcat:	ft_strlcat.c
 	$(CC) $(CFLAGS) $@.c ft_strlen.c -lbsd
 	./a.out
 
+ft_strlcpy:	ft_strlcpy.c
+	$(CC) $(CFLAGS) $@.c ft_strlen.c -lbsd
+	./a.out
+
 ft_strlen:	ft_strlen.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_strncmp:	ft_strncmp.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_strrchr:	ft_strrchr.c
-	$(CC) $(CFLAGS) $@.c ft_strlen.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c ft_strlen.c
 	./a.out
 
 ft_tolower:	ft_tolower.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_toupper:	ft_isprint.c
-	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
