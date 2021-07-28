@@ -56,6 +56,10 @@ ft_memcpy:	ft_memcpy.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
+ft_memmove:	ft_memmove.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	./a.out
+
 ft_memset:	ft_memset.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out

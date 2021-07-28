@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:56:08 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/27 22:27:12 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/28 10:03:20 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,11 @@ void				*ft_memcpy(
 						const void	*src,
 						unsigned long int	n);
 
+void				*ft_memmove(
+						void	*dst,
+						const void	*src,
+						unsigned long int	len);
+						
 void				*ft_memset(
 						void	*b,
 						int	c,
