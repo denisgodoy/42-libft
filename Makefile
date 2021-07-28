@@ -2,7 +2,7 @@ NAME := libft.a
 
 CC := clang
 
-CFLAGS := -Wall -Werror -Wextra
+CFLAGS := -Wall -Werror -Wextra -fsanitize=address
 
 SRC := ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strchr.c \
 ft_strlen.c ft_strncmp.c ft_tolower.c ft_toupper.c
@@ -28,6 +28,10 @@ ft_atoi:	ft_atoi.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
+ft_bzero:	ft_bzero.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	./a.out
+
 ft_isalnum:	ft_isalnum.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
@@ -45,6 +49,10 @@ ft_isdigit:	ft_isdigit.c
 	./a.out
 
 ft_isprint:	ft_isprint.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	./a.out
+
+ft_memset:	ft_memset.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
