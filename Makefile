@@ -4,8 +4,9 @@ CC := clang
 
 CFLAGS := -Wall -Werror -Wextra -fsanitize=address
 
-SRC := ft_atoi.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c ft_strchr.c \
-ft_strlen.c ft_strncmp.c ft_tolower.c ft_toupper.c
+SRC := ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
+ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlen.c ft_strncmp.c ft_strrchr.c \
+ft_tolower.c ft_toupper.c
 
 OBJ := $(SRC:%.c=%.o)
 
@@ -24,7 +25,7 @@ fclean:	clean
 
 re:	fclean all
 
-ft_atoi:	/libft/ft_atoi.c
+ft_atoi:	ft_atoi.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
@@ -66,6 +67,10 @@ ft_memset:	ft_memset.c
 
 ft_strchr:	ft_strchr.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	./a.out
+
+ft_strlcat:	ft_strlcat.c
+	$(CC) $(CFLAGS) $@.c ft_strlen.c -lbsd
 	./a.out
 
 ft_strlen:	ft_strlen.c
