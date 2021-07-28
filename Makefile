@@ -12,7 +12,7 @@ OBJ := $(SRC:%.c=%.o)
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	rm -f $@
+	rm -f $@$
 	ar cq $@ $(OBJ)
 
 clean:	clean
@@ -24,7 +24,7 @@ fclean:	clean
 
 re:	fclean all
 
-ft_atoi:	ft_atoi.c
+ft_atoi:	/libft/ft_atoi.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
@@ -49,6 +49,10 @@ ft_isdigit:	ft_isdigit.c
 	./a.out
 
 ft_isprint:	ft_isprint.c
+	$(CC) $(CFLAGS) $@.c ./main/$@.c
+	./a.out
+
+ft_memcpy:	ft_memcpy.c
 	$(CC) $(CFLAGS) $@.c ./main/$@.c
 	./a.out
 
