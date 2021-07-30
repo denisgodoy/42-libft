@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:44 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/28 16:45:33 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/30 18:35:38 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,14 @@ int					ft_isascii(int	c);
 int					ft_isdigit(int	c);
 
 int					ft_isprint(int	c);
+
+void				*ft_memchr(const void	*s,
+						int	c,
+						unsigned long int	n);
+
+int					ft_memcmp(const void	*s1,
+						const void	*s2,
+						unsigned long int	n);
 
 void				*ft_memcpy(
 						void	*dst,

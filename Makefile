@@ -5,8 +5,8 @@ CC := clang
 CFLAGS := -Wall -Werror -Wextra
 
 SRC := ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
-ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c \
-ft_strrchr.c ft_tolower.c ft_toupper.c
+ft_memchr.c ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c \
+ft_strlen.c ft_strncmp.c ft_strrchr.c ft_tolower.c ft_toupper.c 
 
 OBJ := $(SRC:%.c=%.o)
 
@@ -53,12 +53,16 @@ ft_isprint:	ft_isprint.c
 	$(CC) $(CFLAGS) $@.c
 	./a.out
 
+ft_memchr:	ft_memchr.c
+	$(CC) $(CFLAGS) $@.c ft_strlen.c ft_strchr.c
+	./a.out
+
 ft_memcpy:	ft_memcpy.c
 	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_memmove:	ft_memmove.c
-	$(CC) $(CFLAGS) $@.c
+	$(CC) $(CFLAGS) $@.c ft_strlen.c ft_strlcpy.c 
 	./a.out
 
 ft_memset:	ft_memset.c
