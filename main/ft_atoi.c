@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:56:26 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/27 14:56:27 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/28 13:27:27 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ int	main(void)
 	char	*string3;
 	char	*string4;
 
-	string = " \n \t \r \v2143a648asd";
+	string = " \n \t \r \v214-3a648asd";
 	string2 = " \n     --+314 a1dfg";
-	string3 = "\n  \t   +123as1dfg";
-	string4 = "\n  \v\r++++---123-2s1d";
+	string3 = "\n  \t   +12+3as1dfg";
+	string4 = "\n  \v\r++++---123 2s1d";
 	printf ("Original atoi: %s\nExpected: %d\nReturned: %d\n\n",
 		string, atoi(string), ft_atoi(string));
 	printf ("Original atoi: %s\nExpected: %d\nReturned: %d\n\n",

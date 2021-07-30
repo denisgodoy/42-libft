@@ -2,11 +2,11 @@ NAME := libft.a
 
 CC := clang
 
-CFLAGS := -Wall -Werror -Wextra -fsanitize=address
+CFLAGS := -Wall -Werror -Wextra
 
 SRC := ft_atoi.c ft_bzero.c ft_isalnum.c ft_isalpha.c ft_isascii.c ft_isdigit.c ft_isprint.c \
-ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlen.c ft_strncmp.c ft_strrchr.c \
-ft_tolower.c ft_toupper.c
+ft_memcpy.c ft_memmove.c ft_memset.c ft_strchr.c ft_strlcat.c ft_strlcpy.c ft_strlen.c ft_strncmp.c \
+ft_strrchr.c ft_tolower.c ft_toupper.c
 
 OBJ := $(SRC:%.c=%.o)
 
@@ -66,7 +66,7 @@ ft_memset:	ft_memset.c
 	./a.out
 
 ft_strchr:	ft_strchr.c
-	$(CC) $(CFLAGS) $@.c
+	$(CC) $(CFLAGS) $@.c ft_strlen.c
 	./a.out
 
 ft_strlcat:	ft_strlcat.c

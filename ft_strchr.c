@@ -5,15 +5,25 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/27 14:55:38 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/27 14:55:39 by degabrie         ###   ########.fr       */
+/*   Created: 2021/07/27 14:53:01 by degabrie          #+#    #+#             */
+/*   Updated: 2021/07/29 20:41:52 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include	"libft.h"
+
 char	*ft_strchr(const char	*s, int	c)
 {
-	while (*(s++))
+	char	*nb;
+
+	nb = (char *)&s[(ft_strlen(s))];
+	if ((char)c == '\0')
+		return (nb);
+	while (*s)
+	{
 		if (*s == (char)c)
 			return ((char *)s);
+		s++;
+	}
 	return (0);
 }

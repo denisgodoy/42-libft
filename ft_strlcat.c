@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/27 14:55:41 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/28 15:30:25 by degabrie         ###   ########.fr       */
+/*   Created: 2021/07/27 14:53:06 by degabrie          #+#    #+#             */
+/*   Updated: 2021/07/28 15:34:01 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ unsigned long int	ft_strlcat(
 {
 	unsigned long int	curr_size;
 	unsigned long int	i;
-	
+
 	curr_size = ft_strlen(dst);
 	i = 0;
 	if (dstsize >= curr_size)

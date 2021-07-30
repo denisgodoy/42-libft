@@ -5,16 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/27 20:42:36 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/27 20:55:22 by degabrie         ###   ########.fr       */
+/*   Created: 2021/07/27 20:41:18 by degabrie          #+#    #+#             */
+/*   Updated: 2021/07/28 18:54:42 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include	"libft.h"
+
 void	ft_bzero(void	*s, unsigned long int	n)
 {
-	char	*str;
-
-	str = &s[0];
 	if (n > 0)
-		*(str++) = '\0';
+		ft_memset(s, 0, n);
 }
