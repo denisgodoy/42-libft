@@ -6,18 +6,23 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:44 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/30 18:35:38 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/31 17:51:12 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# include <stdlib.h>
 
 int					ft_atoi(const char	*nptr);
 
 void				ft_bzero(
 						void	*s,
 						unsigned long int	n);
+
+void				*ft_calloc(
+						unsigned long int	count,
+						unsigned long int	size);
 
 int					ft_isalnum(int	c);
 
@@ -29,11 +34,13 @@ int					ft_isdigit(int	c);
 
 int					ft_isprint(int	c);
 
-void				*ft_memchr(const void	*s,
+void				*ft_memchr(
+						const void	*s,
 						int	c,
 						unsigned long int	n);
 
-int					ft_memcmp(const void	*s1,
+int					ft_memcmp(
+						const void	*s1,
 						const void	*s2,
 						unsigned long int	n);
 
@@ -55,6 +62,8 @@ void				*ft_memset(
 char				*ft_strchr(
 						const char	*s,
 						int	c);
+
+char				*ft_strdup(const char	*s1);
 
 unsigned long int	ft_strlcat(
 						char	*dst,
