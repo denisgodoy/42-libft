@@ -54,7 +54,7 @@ ft_isprint:	ft_isprint.c
 	./a.out
 
 ft_memchr:	ft_memchr.c
-	$(CC) $(CFLAGS) $@.c ft_strlen.c ft_strchr.c
+	$(CC) $(CFLAGS) $@.c
 	./a.out
 
 ft_memcpy:	ft_memcpy.c
@@ -62,7 +62,7 @@ ft_memcpy:	ft_memcpy.c
 	./a.out
 
 ft_memmove:	ft_memmove.c
-	$(CC) $(CFLAGS) $@.c ft_strlen.c ft_strlcpy.c 
+	$(CC) $(CFLAGS) $@.c 
 	./a.out
 
 ft_memset:	ft_memset.c
