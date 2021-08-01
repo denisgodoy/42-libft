@@ -6,13 +6,15 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:15 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/31 11:17:17 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/31 21:26:27 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strncmp(const char	*s1, const char	*s2, unsigned long int	n)
+#include	"libft.h"
+
+int	ft_strncmp(const char	*s1, const char	*s2, size_t	n)
 {
-	unsigned long int	i;
+	size_t	i;
 
 	i = 0;
 	if (n == 0)

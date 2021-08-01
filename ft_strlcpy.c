@@ -6,16 +6,15 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/28 16:25:43 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/31 12:05:08 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/31 21:05:00 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-unsigned long int	ft_strlcpy(
-char	*dst,	const char	*src,	unsigned long int	dstsize)
+size_t	ft_strlcpy(char	*dst,	const char	*src,	size_t	dstsize)
 {
-	unsigned long int	i;
+	size_t	i;
 
 	i = 0;
 	if (dstsize > 0)

@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:44 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/31 17:51:12 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/31 21:18:28 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ int					ft_atoi(const char	*nptr);
 
 void				ft_bzero(
 						void	*s,
-						unsigned long int	n);
+						size_t	n);
 
 void				*ft_calloc(
-						unsigned long int	count,
-						unsigned long int	size);
+						size_t	count,
+						size_t	size);
 
 int					ft_isalnum(int	c);
 
@@ -37,27 +37,27 @@ int					ft_isprint(int	c);
 void				*ft_memchr(
 						const void	*s,
 						int	c,
-						unsigned long int	n);
+						size_t	n);
 
 int					ft_memcmp(
 						const void	*s1,
 						const void	*s2,
-						unsigned long int	n);
+						size_t	n);
 
 void				*ft_memcpy(
 						void	*dst,
 						const void	*src,
-						unsigned long int	n);
+						size_t	n);
 
 void				*ft_memmove(
 						void	*dst,
 						const void	*src,
-						unsigned long int	len);
+						size_t	len);
 
 void				*ft_memset(
 						void	*b,
 						int	c,
-						unsigned long int	len);
+						size_t	len);
 
 char				*ft_strchr(
 						const char	*s,
@@ -65,22 +65,22 @@ char				*ft_strchr(
 
 char				*ft_strdup(const char	*s1);
 
-unsigned long int	ft_strlcat(
+size_t				ft_strlcat(
 						char	*dst,
 						const char	*src,
-						unsigned long int	dstsize);
+						size_t	dstsize);
 
-unsigned long int	ft_strlcpy(
+size_t				ft_strlcpy(
 						char	*dst,
 						const char	*src,
-						unsigned long int	dstsize);
+						size_t	dstsize);
 
-unsigned long int	ft_strlen(const char	*s);
+size_t				ft_strlen(const char	*s);
 
 int					ft_strncmp(
 						const char	*s1,
 						const char	*s2,
-						unsigned long int	n);
+						size_t	n);
 
 char				*ft_strrchr(
 						const char	*s,

@@ -6,11 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 18:08:48 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/28 18:51:49 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/31 21:23:58 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void	*b, int	c, unsigned long int	len)
+#include	"libft.h"
+
+void	*ft_memset(void	*b, int	c, size_t	len)
 {
 	char	*str;
 

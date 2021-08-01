@@ -6,11 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:11 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/29 18:52:19 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/31 21:24:12 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-unsigned long int	ft_strlen(const char	*s)
+#include	"libft.h"
+
+size_t	ft_strlen(const char	*s)
 {
 	int	i;
 

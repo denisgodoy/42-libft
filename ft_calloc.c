@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 12:35:25 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/31 17:20:35 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/31 21:03:08 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-void	*ft_calloc(unsigned long int	count, unsigned long int	size)
+void	*ft_calloc(size_t	count, size_t	size)
 {
 	void	*ptr;
 

@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 20:41:18 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/28 18:54:42 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/07/31 21:02:58 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-void	ft_bzero(void	*s, unsigned long int	n)
+void	ft_bzero(void	*s, size_t	n)
 {
 	if (n > 0)
 		ft_memset(s, 0, n);
