@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:44 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/31 22:05:06 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/03 17:03:40 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	*ft_memcpy(void	*dst, const void	*src, size_t	n);
 void	*ft_memmove(void	*dst, const void	*src, size_t	len);
 void	*ft_memset(void	*b, int	c, size_t	len);
 char	*ft_strchr(const char	*s, int	c);
+char	*ft_substr(char const	*s, unsigned int	start, size_t	len);
 char	*ft_strdup(const char	*s1);
 size_t	ft_strlcat(char	*dst, const char	*src, size_t	dstsize);
 size_t	ft_strlcpy(char	*dst, const char	*src, size_t	dstsize);

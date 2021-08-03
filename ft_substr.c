@@ -1,28 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/30 19:33:18 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/03 17:02:01 by degabrie         ###   ########.fr       */
+/*   Created: 2021/08/03 16:50:37 by degabrie          #+#    #+#             */
+/*   Updated: 2021/08/03 20:23:23 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <stdio.h>
+#include	"libft.h"
 
-char	*ft_strnstr(const char	*haystack, const char	*needle, size_t	len)
+char	*ft_substr(char const	*s, unsigned int	start, size_t	len)
 {
-	char	*nptr;
-	char	*hptr;
+	char	*ptr;
 
-	hptr = (char *)haystack;
-	nptr = (char *)needle;
-	if (needle[0] == 0)
-		return (0);
-	if (ft_strlen(haystack) > len)
-		hptr[len] = '\0';
-	return (0);
+	ptr = (char *)malloc(len + 1);
+	ft_strlcpy(ptr, s + start, len + 1);
+	return (ptr);
 }
