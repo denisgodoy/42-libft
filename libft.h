@@ -6,13 +6,14 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:44 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/04 16:11:01 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/06 10:51:24 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
+# include <unistd.h>
 
 int		ft_atoi(const char	*nptr);
 void	ft_bzero(void	*s, size_t	n);
@@ -27,6 +28,11 @@ int		ft_memcmp(const void	*s1, const void	*s2, size_t	n);
 void	*ft_memcpy(void	*dst, const void	*src, size_t	n);
 void	*ft_memmove(void	*dst, const void	*src, size_t	len);
 void	*ft_memset(void	*b, int	c, size_t	len);
+void	ft_putchar_fd(char	c, int	fd);
+void	ft_putendl_fd(char	*s, int	fd);
+void	ft_putnbr_fd(int	n, int	fd);
+void	ft_putstr_fd(char	*s, int	fd);
+char	**ft_split(char const	*s, char	c);
 char	*ft_strchr(const char	*s, int	c);
 char	*ft_strdup(const char	*s1);
 char	*ft_strjoin(char const	*s1, char const	*s2);
