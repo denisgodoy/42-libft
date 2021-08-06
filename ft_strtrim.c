@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 10:40:51 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/05 10:45:46 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/05 11:25:19 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strtrim(char const	*s1, char const	*set)
 {
-	size_t		i;
-	size_t		j;
-	size_t		k;
-	char		*ptr;
+	size_t	i;
+	size_t	j;
+	size_t	k;
+	char	*ptr;
 
 	i = 0;
 	j = i;

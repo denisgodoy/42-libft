@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 10:20:43 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/06 10:23:57 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/06 17:38:46 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,7 @@
 
 void	ft_putstr_fd(char	*s, int	fd)
 {
+	if (!s)
+		return ;
 	write(fd, s, ft_strlen(s));
 }

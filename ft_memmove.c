@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 22:38:13 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/31 21:03:53 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/06 18:27:48 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ void	*ft_memmove(void	*dst, const void	*src, size_t	len)
 
 	str_dst = (char *)dst;
 	str_src = (char *)src;
+	if (dst == 0 || dst == 0)
+		return (0);
 	if (&str_src[0] >= &str_dst[0])
 		return (ft_memcpy(str_dst, str_src, len));
 	while (len--)

@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 10:14:14 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/06 18:14:13 by degabrie         ###   ########.fr       */
+/*   Created: 2021/08/06 11:01:06 by degabrie          #+#    #+#             */
+/*   Updated: 2021/08/06 17:41:31 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-void	ft_putchar_fd(char	c, int	fd)
+void	ft_putnbr_fd(int	n, int	fd)
 {
-	if (ft_isascii(c))
-		write(fd, &c, 1);
+	write(fd, &n, 10);
 }
