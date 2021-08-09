@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/06 11:01:06 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/06 17:41:31 by degabrie         ###   ########.fr       */
+/*   Created: 2021/08/07 10:18:26 by degabrie          #+#    #+#             */
+/*   Updated: 2021/08/09 18:33:23 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,16 @@
 
 void	ft_putnbr_fd(int	n, int	fd)
 {
-	write(fd, &n, 10);
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		ft_putnbr_fd(n *= -1, fd);
+	}
+	else if (n > 9)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putnbr_fd(n % 10, fd);
+	}
+	else
+		ft_putchar_fd(n + '0', fd);
 }
