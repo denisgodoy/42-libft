@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 17:44:12 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/10 23:48:07 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/11 16:30:47 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@ char	*ft_strdup(const char	*s1)
 	size_t	size;
 
 	size = ft_strlen(s1) + 1;
-	if (!s1)
-		return (0);
 	ptr = (char *)malloc(size);
 	if (!ptr)
 		return (0);
