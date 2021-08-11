@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/06 10:14:14 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/06 18:14:13 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/09 20:26:56 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 void	ft_putchar_fd(char	c, int	fd)
 {
-	if (ft_isascii(c))
-		write(fd, &c, 1);
+	write(fd, &c, 1);
 }
