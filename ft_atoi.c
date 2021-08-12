@@ -6,11 +6,11 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:52:42 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/11 15:43:27 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/12 19:38:22 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	check_overflow(int	num, int	c_minus)
+static int	ft_check_overflow(int	num, int	c_minus)
 {
 	unsigned int	nb;
 
@@ -43,7 +43,7 @@ int	ft_atoi(const char	*str)
 		num = num * 10 + (*str - '0');
 		str++;
 	}
-	ret = check_overflow(num, c_minus);
+	ret = ft_check_overflow(num, c_minus);
 	if (ret != 1)
 		return (ret);
 	if (c_minus)
