@@ -10,7 +10,7 @@ Writing my own C library functions.
 ## Part 1 - Libc functions
 
 | Function 	|  Description  |    Library   	|
-|:--------:	|:------------	|:------------:	|
+|:--------:	|:------------:	|:------------:	|
 |  ft_strlen  	|Calculates the length of the string s, excluding the terminating null byte (aq\0aq).|   string.h   	|
 |  ft_memset  	|Fills the first n bytes of the memory area pointed to by s with the constant byte c.|   string.h   	|
 |   ft_bzero  	|Sets the first n bytes of the area starting at s to zero (bytes containing aq\0aq).|   string.h   	|
@@ -30,12 +30,12 @@ Writing my own C library functions.
 |  ft_strnstr 	|Locates the first occurrence of the	null-terminated string needle in the	string haystack, where not more than len characters are searched.|    bsd/string.h   	|
 
 | Function 	|  Description  |    Library   	|
-|:--------:	|:------------	|:------------:	|
+|:--------:	|:------------:	|:------------:	|
 |   ft_atoi   	|Converts the initial portion of the string pointed to by str to int.|    stdlib.h   	|
 |  ft_strdup  	|Returns a pointer to a new string which is a duplicate of the string s. Memory for the new string is obtained with malloc(3), and can be freed with free(3).|    stdlib.h   	|
 
 | Function 	|  Description  |    Library   	|
-|:--------:	|:------------	|:------------:	|
+|:--------:	|:------------:	|:------------:	|
 |  ft_isalpha 	|Checks for an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) or islower(c)).|    ctype.h   	|
 |  ft_isdigit 	|Checks for a digit (0 through 9).|    ctype.h   	|
 |  ft_isalnum 	|Checks for an alphanumeric character; it is equivalent to (isalpha(c) or isdigit(c)).|    ctype.h   	|
@@ -47,7 +47,7 @@ Writing my own C library functions.
 ## Part 2 - Additional functions
 
 | Function 	|  Description  |
-|:--------:	|:------------	|
+|:--------:	|:------------:	|
 |  ft_substr 	|Allocates (with malloc(3)) and returns a substring from the string ’s’. The substring begins at index ’start’ and is of maximum size ’len’.|
 |  ft_strjoin 	|Allocates (with malloc(3)) and returns a new string, which is the result of the concatenation of ’s1’ and ’s2’.|
 |  ft_strtrim 	|Allocates (with malloc(3)) and returns a copy of ’s1’ with the characters specified in ’set’ removed from the beginning and the end of the string.|
@@ -63,7 +63,7 @@ Writing my own C library functions.
 ## Bonus part
 
 | Function 	|  Description  |
-|:--------:	|:------------	|
+|:--------:	|:------------:	|
 |  ft_lstnew 	|Allocates (with malloc(3)) and returns a new element. The variable ’content’ is initialized with the value of the parameter ’content’. The variable ’next’ is initialized to NULL.|
 |  ft_lstadd_front 	|Adds the element ’new’ at the beginning of the list.|
 |  ft_lstsize 	|Counts the number of elements in a list.|
