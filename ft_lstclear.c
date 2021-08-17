@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 18:16:09 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/13 20:38:37 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/16 22:04:17 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,13 +15,14 @@
 void	ft_lstclear(t_list	**lst, void	(*del)(void *))
 {
 	t_list	*node;
+	t_list	*nxt;
 
-	node = *lst;
-	while (node != 0)
+	while (*lst != 0)
 	{
-		node = node->next;
-		del(node);
+		nxt = *lst;
+		node = nxt->next;
+		ft_lstdelone(*lst, (*del));
+		*lst = node;
 	}
-	free(node);
-	*lst = NULL;
+	*lst = 0;
 }
