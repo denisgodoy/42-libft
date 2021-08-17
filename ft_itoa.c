@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 12:28:40 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/12 19:55:02 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/17 10:12:28 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,10 +35,9 @@ char	*ft_itoa(int	n)
 	long int	nbr;
 	int			i;
 	char		*ptr;
-	char		n_str;
 
 	nbr = n;
-	ptr = (char *)ft_calloc(ft_count_decimal(nbr) + 1, 1);
+	ptr = (char *)ft_calloc(ft_count_decimal(nbr) + 1, sizeof(char));
 	if (!ptr)
 		return (0);
 	if (n == 0)
@@ -51,9 +50,8 @@ char	*ft_itoa(int	n)
 	}
 	while (nbr > 0)
 	{
-		n_str = nbr % 10 + '0';
+		ptr[i] = nbr % 10 + '0';
 		nbr = nbr / 10;
-		ptr[i] = n_str;
 		i--;
 	}
 	return (ptr);
