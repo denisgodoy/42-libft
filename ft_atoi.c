@@ -6,21 +6,11 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:52:42 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/12 19:38:22 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/17 12:26:22 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_check_overflow(int	num, int	c_minus)
-{
-	unsigned int	nb;
-
-	nb = num;
-	if (nb > 2147483648 && c_minus)
-		return (0);
-	if (nb > 2147483647 && !c_minus)
-		return (-1);
-	return (1);
-}
+static int	ft_check_overflow(int	num, int	c_minus);
 
 int	ft_atoi(const char	*str)
 {
@@ -49,4 +39,16 @@ int	ft_atoi(const char	*str)
 	if (c_minus)
 		return (num *= -1);
 	return (num);
+}
+
+static int	ft_check_overflow(int	num, int	c_minus)
+{
+	unsigned int	nb;
+
+	nb = num;
+	if (nb > 2147483648 && c_minus)
+		return (0);
+	if (nb > 2147483647 && !c_minus)
+		return (-1);
+	return (1);
 }

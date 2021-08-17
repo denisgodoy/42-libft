@@ -6,29 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 12:28:40 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/17 10:12:28 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/17 12:26:58 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-static int	ft_count_decimal(long int	n)
-{
-	int	i;
-
-	i = 0;
-	if (n <= 0)
-	{
-		n *= -1;
-		i = 1;
-	}
-	while (n > 0)
-	{
-		n = n / 10;
-		i++;
-	}
-	return (i);
-}
+static int	ft_count_decimal(long int	n);
 
 char	*ft_itoa(int	n)
 {
@@ -55,4 +39,22 @@ char	*ft_itoa(int	n)
 		i--;
 	}
 	return (ptr);
+}
+
+static int	ft_count_decimal(long int	n)
+{
+	int	i;
+
+	i = 0;
+	if (n <= 0)
+	{
+		n *= -1;
+		i = 1;
+	}
+	while (n > 0)
+	{
+		n = n / 10;
+		i++;
+	}
+	return (i);
 }
