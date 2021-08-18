@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:52:51 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/27 14:52:52 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/18 16:25:38 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@ int	ft_isalpha(int	c)
 {
 	if ((c >= 'A' && c <= 'Z')
 		|| (c >= 'a' && c <= 'z'))
-		return (1024);
+		return (1);
 	return (0);
 }
