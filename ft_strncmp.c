@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:15 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/10 19:52:43 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/18 10:46:18 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_strncmp(const char	*s1, const char	*s2, size_t	n)
 	size_t	i;
 
 	i = 0;
-	if (n == 0)
+	if (!n)
 		return (0);
 	while (i < (n - 1) && s1 && s2)
 	{

@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 19:33:18 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/12 00:30:57 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/18 10:51:55 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strnstr(const char	*haystack, const char	*needle, size_t	len)
 	size_t	nlen;
 
 	nlen = ft_strlen(needle);
-	if (*needle == 0)
+	if (!*needle)
 		return ((char *)haystack);
 	while (*haystack && nlen <= len)
 	{

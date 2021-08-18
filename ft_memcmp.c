@@ -6,7 +6,7 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/30 18:29:04 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/10 17:18:50 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/08/18 10:45:05 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	ft_memcmp(const void	*s1, const void	*s2, size_t	n)
 	str1 = (char *)s1;
 	str2 = (char *)s2;
 	i = 0;
-	if (n == 0)
+	if (!n)
 		return (0);
 	while (i < (n - 1) && str1 && str2)
 	{
