@@ -3,9 +3,14 @@
 # Libft :computer:
 Writing my own C library functions.
 
+- [Evaluation](https://github.com/denisgodoy/42-libft#evaluation)
 - [Part 1 - Libc functions](https://github.com/denisgodoy/42-libft#part-1---libc-functions)
 - [Part 2 - Additional functions](https://github.com/denisgodoy/42-libft#part-2---additional-functions)
 - [Bonus part](https://github.com/denisgodoy/42-libft#bonus-part)
+
+## Evaluation
+![evaluation](https://user-images.githubusercontent.com/56933400/130153702-8f2c7ee7-0f47-4ffb-b96b-f3620741139c.png)
+![badge](https://game.42sp.org.br/static/assets/achievements/libftm.png)
 
 ## Part 1 - Libc functions
 
