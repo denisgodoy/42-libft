@@ -6,15 +6,15 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/09 12:28:40 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/17 12:26:58 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:51:54 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-static int	ft_count_decimal(long int	n);
+static int	ft_count_decimal(long int n);
 
-char	*ft_itoa(int	n)
+char	*ft_itoa(int n)
 {
 	long int	nbr;
 	int			i;
@@ -41,7 +41,7 @@ char	*ft_itoa(int	n)
 	return (ptr);
 }
 
-static int	ft_count_decimal(long int	n)
+static int	ft_count_decimal(long int n)
 {
 	int	i;
 

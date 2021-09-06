@@ -6,11 +6,11 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:52:59 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/18 16:25:47 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:51:45 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isprint(int	c)
+int	ft_isprint(int c)
 {
 	if (c >= 32 && c < 127)
 		return (1);

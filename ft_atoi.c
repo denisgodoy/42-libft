@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:52:42 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/17 12:26:22 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 18:03:11 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-static int	ft_check_overflow(int	num, int	c_minus);
+static int	ft_check_overflow(int num, int c_minus);
 
-int	ft_atoi(const char	*str)
+int	ft_atoi(const char *str)
 {
 	int	c_minus;
 	int	num;
@@ -41,7 +41,7 @@ int	ft_atoi(const char	*str)
 	return (num);
 }
 
-static int	ft_check_overflow(int	num, int	c_minus)
+static int	ft_check_overflow(int num, int c_minus)
 {
 	unsigned int	nb;
 

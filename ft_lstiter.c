@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 18:45:19 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/13 19:18:29 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 18:03:24 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-void	ft_lstiter(t_list	*lst, void	(*f)(void *))
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	int	i;
 

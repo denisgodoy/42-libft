@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/31 17:44:12 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/17 10:11:03 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:54:29 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-char	*ft_strdup(const char	*s1)
+char	*ft_strdup(const char *s1)
 {
 	char	*ptr;
 	size_t	size;

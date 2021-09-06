@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 00:49:05 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/13 10:07:36 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:52:44 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-t_list	*ft_lstnew(void	*content)
+t_list	*ft_lstnew(void *content)
 {
 	t_list	*new;
 

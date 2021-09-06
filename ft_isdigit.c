@@ -6,11 +6,11 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:52:56 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/18 16:26:07 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:51:42 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isdigit(int	c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 		return (1);

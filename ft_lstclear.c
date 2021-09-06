@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 18:16:09 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/16 22:04:17 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 18:02:32 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-void	ft_lstclear(t_list	**lst, void	(*del)(void *))
+void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*node;
 	t_list	*nxt;

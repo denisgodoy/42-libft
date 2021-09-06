@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/04 09:56:33 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/17 10:10:36 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:54:40 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-char	*ft_strjoin(char const	*s1, char const	*s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*ptr;
 	size_t	size;

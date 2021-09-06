@@ -6,11 +6,11 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:26 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/27 14:53:27 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:56:05 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_tolower(int	c)
+int	ft_tolower(int c)
 {
 	if (c >= 'A' && c <= 'Z')
 		c = (c + 32);

@@ -6,11 +6,11 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 14:53:31 by degabrie          #+#    #+#             */
-/*   Updated: 2021/07/27 14:53:32 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:56:09 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int	c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c = (c - 32);

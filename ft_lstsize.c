@@ -6,13 +6,13 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/13 10:53:59 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/13 11:03:01 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 17:52:47 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-int	ft_lstsize(t_list	*lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	i;
 

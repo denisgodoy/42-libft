@@ -6,16 +6,16 @@
 /*   By: degabrie <degabrie@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/12 15:12:17 by degabrie          #+#    #+#             */
-/*   Updated: 2021/08/17 19:41:12 by degabrie         ###   ########.fr       */
+/*   Updated: 2021/09/06 18:01:01 by degabrie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
 static size_t	ft_count_words(char const *s, char c);
-static size_t	ft_substr_len(char const	*s, char	c);
+static size_t	ft_substr_len(char const *s, char c);
 
-char	**ft_split(char const	*s, char	c)
+char	**ft_split(char const *s, char c)
 {
 	char	**tab;
 	size_t	i;
@@ -62,7 +62,7 @@ static size_t	ft_count_words(char const *s, char c)
 	return (words);
 }
 
-static size_t	ft_substr_len(char const	*s, char	c)
+static size_t	ft_substr_len(char const *s, char c)
 {
 	size_t	i;
 
