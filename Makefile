@@ -20,8 +20,8 @@ BONUS_OBJ := $(BONUS_SRC:%.c=%.o)
 all:	$(NAME)
 
 $(NAME):	$(OBJ)
-	rm -f $@$
-	ar -rcs $@ $(OBJ)
+	rm -f $(NAME)
+	ar -rcs $(NAME) $(OBJ)
 
 bonus:
 	$(CC) $(CFLAGS) -c $(BONUS_SRC)
