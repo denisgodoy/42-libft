@@ -27,7 +27,7 @@ bonus:
 	$(CC) $(CFLAGS) -c $(BONUS_SRC)
 	ar -rcs $(NAME) $(BONUS_OBJ)
 
-clean:	clean
+clean:
 	rm -rf ./a.out
 	rm -rf *.o
 
